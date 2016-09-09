@@ -1,1 +1,9 @@
 c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\bin\Debug\DiscordBotGenerator.exe.config
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\bin\Debug\DiscordBotGenerator.exe
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\bin\Debug\DiscordBotGenerator.pdb
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\obj\Debug\DiscordBotGenerator.csprojResolveAssemblyReference.cache
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\obj\Debug\DiscordBotGenerator.MainForm.resources
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\obj\Debug\DiscordBotGenerator.Properties.Resources.resources
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\obj\Debug\DiscordBotGenerator.csproj.GenerateResource.Cache
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\obj\Debug\DiscordBotGenerator.exe
+c:\users\antoi\documents\visual studio 2015\Projects\DiscordBotGenerator\DiscordBotGenerator\obj\Debug\DiscordBotGenerator.pdb
