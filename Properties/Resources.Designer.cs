@@ -83,6 +83,16 @@ namespace DiscordBotGenerator.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IconDelete {
+            get {
+                object obj = ResourceManager.GetObject("IconDelete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IconMessage {
             get {
                 object obj = ResourceManager.GetObject("IconMessage", resourceCulture);

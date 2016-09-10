@@ -117,49 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="toolTipDisplay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>58, 21</value>
-  </metadata>
-  <data name="commandArgumentsAllowsSpacesCheckBox.ToolTip" xml:space="preserve">
-    <value>If checked, the last argument will be able to contain spaces:
-
-Example with 2 arguments:
-!player (1)[add] (2)[never gonna give you up]
-
-If this property wasn't checked then the command would have been interpreted as follows:
-! player (1)[add] (2)[never] (discarded arguments)[gonna give you up]</value>
-  </data>
-  <data name="commandTitlePrefixCheckbox.ToolTip" xml:space="preserve">
-    <value>If unchecked, this command won't require to have the global prefix to be recognized.
-Usefull to make the bot react to sentences.
-
-Example with "Baybe don't hurt me" as the label and "Uses prefix" unchecked:
-User: Baybe don't hurt me
-Bot: No more!</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="commandTitleIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAARhJREFUaEPt
-        1WFqwkAUBOD0RrZFrNRb+aMglCrtL+lVW209gM5DB0LYQDbZ9xZhPhgIgU1mULQRERERkdG2yNf1MtsD
-        skPsGVXYi8+3fNuNDFb+E+H58BHt8sweGWqDdM+HjUiVPyErZKgZ8oN0n+M+okR5Ch9RsjyFjfAoT+4j
-        PMuT24iI8lR8RGR5KjaiRnmaPKJmeZo0om/AKxLlESn+KfwjS8Tb5PKUGvGHvCBerPwv0n1vdnnqG7FA
-        SitenlIjjsgcKeUJcSlPqREH5BmZyr08pUbYi63AWGHlqW+EfX9zhZen1Aj72bM/n6GqlafUiDUy1BvS
-        PR9Wntoj3u1Gpvb58PJkL/64Xo5i56uVFxEREblvTXMBi0bubJ+bJwQAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="commandTitleIcon.ToolTip" xml:space="preserve">
-    <value>Command labels follows this pattern:
-[command prefix]&lt;command label&gt; [args]
-
-Example:
-!song add never gonna give you up
-
-Command arguments define everything after the command label and are separated by spaces:
-
-Example with 2 arguments:
-!song (1)[add] (2)[never gonna give you up]</value>
-  </data>
   <data name="addCommandButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAA7dJREFUaEPt
@@ -181,5 +139,47 @@ Example with 2 arguments:
         gAKQTSdWJeY46zndE08I+EyM7yhJqCprhdko2OA0YYPThA1OEzY4PQxm/gOUO8f1FCkESwAAAABJRU5E
         rkJggg==
 </value>
+  </data>
+  <metadata name="toolTipDisplay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>58, 21</value>
+  </metadata>
+  <data name="commandArgumentsAllowsSpacesCheckBox.ToolTip" xml:space="preserve">
+    <value>If checked, the last argument will be able to contain spaces:
+
+Example with 2 arguments:
+!player (1)[add] (2)[never gonna give you up]
+
+If this property wasn't checked then the command would have been interpreted as follows:
+! player (1)[add] (2)[never] (discarded arguments)[gonna give you up]</value>
+  </data>
+  <data name="commandTitlePrefixCheckbox.ToolTip" xml:space="preserve">
+    <value>If unchecked, this command won't require to have the global prefix to be recognized.
+Usefull to make the bot react to sentences.
+
+Example with "Baybe don't hurt me" as the label and "Uses prefix" unchecked:
+User: Baybe don't hurt me
+Bot: No more!</value>
+  </data>
+  <data name="commandTitleIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAARhJREFUaEPt
+        1WFqwkAUBOD0RrZFrNRb+aMglCrtL+lVW209gM5DB0LYQDbZ9xZhPhgIgU1mULQRERERkdG2yNf1MtsD
+        skPsGVXYi8+3fNuNDFb+E+H58BHt8sweGWqDdM+HjUiVPyErZKgZ8oN0n+M+okR5Ch9RsjyFjfAoT+4j
+        PMuT24iI8lR8RGR5KjaiRnmaPKJmeZo0om/AKxLlESn+KfwjS8Tb5PKUGvGHvCBerPwv0n1vdnnqG7FA
+        SitenlIjjsgcKeUJcSlPqREH5BmZyr08pUbYi63AWGHlqW+EfX9zhZen1Aj72bM/n6GqlafUiDUy1BvS
+        PR9Wntoj3u1Gpvb58PJkL/64Xo5i56uVFxEREblvTXMBi0bubJ+bJwQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="commandTitleIcon.ToolTip" xml:space="preserve">
+    <value>Command labels follows this pattern:
+[command prefix]&lt;command label&gt; [args]
+
+Example:
+!song add never gonna give you up
+
+Command arguments define everything after the command label and are separated by spaces:
+
+Example with 2 arguments:
+!song (1)[add] (2)[never gonna give you up]</value>
   </data>
 </root>

@@ -36,6 +36,16 @@
             this.commandsListContainer = new System.Windows.Forms.Panel();
             this.commandsList = new System.Windows.Forms.ListView();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.commandActionsTablePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.commandAddActionPanel = new System.Windows.Forms.Panel();
+            this.commandAddActionComboBox = new System.Windows.Forms.ComboBox();
+            this.commandAddActionLabel = new System.Windows.Forms.Label();
+            this.commandArgumentsAllowsSpacesCheckBox = new System.Windows.Forms.CheckBox();
+            this.commandArgumentsNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.commandArgumentsLabel = new System.Windows.Forms.Label();
+            this.commandTitleLabel = new System.Windows.Forms.Label();
+            this.commandTitleTextBox = new System.Windows.Forms.TextBox();
+            this.commandTitlePrefixCheckbox = new System.Windows.Forms.CheckBox();
             this.propertiesPanel = new System.Windows.Forms.Panel();
             this.propertiesCommandPrefixTextBox = new System.Windows.Forms.TextBox();
             this.propertiesCommandPrefixLabel = new System.Windows.Forms.Label();
@@ -45,25 +55,26 @@
             this.propertiesClientIDLabel = new System.Windows.Forms.Label();
             this.propertiesBotNameTextBox = new System.Windows.Forms.TextBox();
             this.propertiesBotNameLabel = new System.Windows.Forms.Label();
-            this.commandTitlePrefixCheckbox = new System.Windows.Forms.CheckBox();
-            this.commandTitleTextBox = new System.Windows.Forms.TextBox();
-            this.commandTitleLabel = new System.Windows.Forms.Label();
             this.toolTipDisplay = new System.Windows.Forms.ToolTip(this.components);
-            this.propertiesPicture = new System.Windows.Forms.PictureBox();
+            this.commandArgumentsTypeLabel1 = new System.Windows.Forms.Label();
+            this.commandArgumentsTypeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.commandArgumentsTypeLabel2 = new System.Windows.Forms.Label();
+            this.commandArgumentsTypeComboBox = new System.Windows.Forms.ComboBox();
             this.commandTitleIcon = new System.Windows.Forms.PictureBox();
+            this.propertiesPicture = new System.Windows.Forms.PictureBox();
             this.addCommandButton = new System.Windows.Forms.Button();
             this.removeCommandButton = new System.Windows.Forms.Button();
-            this.commandArgumentsLabel = new System.Windows.Forms.Label();
-            this.comandArgumentsNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.commandArgumentsAllowsSpacesCheckBox = new System.Windows.Forms.CheckBox();
             this.commandsPanel.SuspendLayout();
             this.commandsHeaderPanel.SuspendLayout();
             this.commandsListContainer.SuspendLayout();
             this.mainPanel.SuspendLayout();
+            this.commandActionsTablePanel.SuspendLayout();
+            this.commandAddActionPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.commandArgumentsNumericUpDown)).BeginInit();
             this.propertiesPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.propertiesPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commandArgumentsTypeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandTitleIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comandArgumentsNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propertiesPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // commandsPanel
@@ -122,8 +133,13 @@
             // mainPanel
             // 
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.mainPanel.Controls.Add(this.commandArgumentsTypeComboBox);
+            this.mainPanel.Controls.Add(this.commandArgumentsTypeLabel2);
+            this.mainPanel.Controls.Add(this.commandArgumentsTypeNumericUpDown);
+            this.mainPanel.Controls.Add(this.commandArgumentsTypeLabel1);
+            this.mainPanel.Controls.Add(this.commandActionsTablePanel);
             this.mainPanel.Controls.Add(this.commandArgumentsAllowsSpacesCheckBox);
-            this.mainPanel.Controls.Add(this.comandArgumentsNumericUpDown);
+            this.mainPanel.Controls.Add(this.commandArgumentsNumericUpDown);
             this.mainPanel.Controls.Add(this.commandArgumentsLabel);
             this.mainPanel.Controls.Add(this.commandTitleLabel);
             this.mainPanel.Controls.Add(this.commandTitleTextBox);
@@ -133,8 +149,149 @@
             this.mainPanel.Location = new System.Drawing.Point(200, 0);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(10);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(684, 461);
+            this.mainPanel.Size = new System.Drawing.Size(484, 461);
             this.mainPanel.TabIndex = 1;
+            // 
+            // commandActionsTablePanel
+            // 
+            this.commandActionsTablePanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandActionsTablePanel.AutoScroll = true;
+            this.commandActionsTablePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.commandActionsTablePanel.ColumnCount = 1;
+            this.commandActionsTablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.commandActionsTablePanel.Controls.Add(this.commandAddActionPanel, 0, 0);
+            this.commandActionsTablePanel.Location = new System.Drawing.Point(0, 192);
+            this.commandActionsTablePanel.Name = "commandActionsTablePanel";
+            this.commandActionsTablePanel.Padding = new System.Windows.Forms.Padding(0, 0, 8, 0);
+            this.commandActionsTablePanel.RowCount = 1;
+            this.commandActionsTablePanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.commandActionsTablePanel.Size = new System.Drawing.Size(484, 268);
+            this.commandActionsTablePanel.TabIndex = 8;
+            // 
+            // commandAddActionPanel
+            // 
+            this.commandAddActionPanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandAddActionPanel.Controls.Add(this.commandAddActionComboBox);
+            this.commandAddActionPanel.Controls.Add(this.commandAddActionLabel);
+            this.commandAddActionPanel.Location = new System.Drawing.Point(0, 0);
+            this.commandAddActionPanel.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.commandAddActionPanel.Name = "commandAddActionPanel";
+            this.commandAddActionPanel.Padding = new System.Windows.Forms.Padding(10);
+            this.commandAddActionPanel.Size = new System.Drawing.Size(475, 44);
+            this.commandAddActionPanel.TabIndex = 0;
+            // 
+            // commandAddActionComboBox
+            // 
+            this.commandAddActionComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandAddActionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.commandAddActionComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandAddActionComboBox.FormattingEnabled = true;
+            this.commandAddActionComboBox.Items.AddRange(new object[] {
+            "Message Reply"});
+            this.commandAddActionComboBox.Location = new System.Drawing.Point(126, 10);
+            this.commandAddActionComboBox.Name = "commandAddActionComboBox";
+            this.commandAddActionComboBox.Size = new System.Drawing.Size(248, 24);
+            this.commandAddActionComboBox.TabIndex = 1;
+            this.commandAddActionComboBox.SelectedIndexChanged += new System.EventHandler(this.commandAddActionComboBox_SelectedIndexChanged);
+            // 
+            // commandAddActionLabel
+            // 
+            this.commandAddActionLabel.AutoSize = true;
+            this.commandAddActionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.commandAddActionLabel.Location = new System.Drawing.Point(13, 10);
+            this.commandAddActionLabel.Name = "commandAddActionLabel";
+            this.commandAddActionLabel.Size = new System.Drawing.Size(89, 20);
+            this.commandAddActionLabel.TabIndex = 0;
+            this.commandAddActionLabel.Text = "Add action:";
+            // 
+            // commandArgumentsAllowsSpacesCheckBox
+            // 
+            this.commandArgumentsAllowsSpacesCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandArgumentsAllowsSpacesCheckBox.AutoSize = true;
+            this.commandArgumentsAllowsSpacesCheckBox.Checked = true;
+            this.commandArgumentsAllowsSpacesCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.commandArgumentsAllowsSpacesCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandArgumentsAllowsSpacesCheckBox.Location = new System.Drawing.Point(165, 92);
+            this.commandArgumentsAllowsSpacesCheckBox.Name = "commandArgumentsAllowsSpacesCheckBox";
+            this.commandArgumentsAllowsSpacesCheckBox.Size = new System.Drawing.Size(209, 21);
+            this.commandArgumentsAllowsSpacesCheckBox.TabIndex = 7;
+            this.commandArgumentsAllowsSpacesCheckBox.Text = "Last argument allows spaces";
+            this.toolTipDisplay.SetToolTip(this.commandArgumentsAllowsSpacesCheckBox, resources.GetString("commandArgumentsAllowsSpacesCheckBox.ToolTip"));
+            this.commandArgumentsAllowsSpacesCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // commandArgumentsNumericUpDown
+            // 
+            this.commandArgumentsNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandArgumentsNumericUpDown.Location = new System.Drawing.Point(60, 90);
+            this.commandArgumentsNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            this.commandArgumentsNumericUpDown.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.commandArgumentsNumericUpDown.Name = "commandArgumentsNumericUpDown";
+            this.commandArgumentsNumericUpDown.Size = new System.Drawing.Size(67, 23);
+            this.commandArgumentsNumericUpDown.TabIndex = 6;
+            this.commandArgumentsNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.commandArgumentsNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.commandArgumentsNumericUpDown.ValueChanged += new System.EventHandler(this.commandArgumentsNumericUpDown_ValueChanged);
+            // 
+            // commandArgumentsLabel
+            // 
+            this.commandArgumentsLabel.AutoSize = true;
+            this.commandArgumentsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandArgumentsLabel.Location = new System.Drawing.Point(60, 69);
+            this.commandArgumentsLabel.Margin = new System.Windows.Forms.Padding(3);
+            this.commandArgumentsLabel.Name = "commandArgumentsLabel";
+            this.commandArgumentsLabel.Size = new System.Drawing.Size(146, 17);
+            this.commandArgumentsLabel.TabIndex = 5;
+            this.commandArgumentsLabel.Text = "Command arguments:";
+            // 
+            // commandTitleLabel
+            // 
+            this.commandTitleLabel.AutoSize = true;
+            this.commandTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandTitleLabel.Location = new System.Drawing.Point(60, 13);
+            this.commandTitleLabel.Name = "commandTitleLabel";
+            this.commandTitleLabel.Size = new System.Drawing.Size(109, 17);
+            this.commandTitleLabel.TabIndex = 3;
+            this.commandTitleLabel.Text = "Command label:";
+            // 
+            // commandTitleTextBox
+            // 
+            this.commandTitleTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandTitleTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.commandTitleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandTitleTextBox.Location = new System.Drawing.Point(60, 37);
+            this.commandTitleTextBox.Name = "commandTitleTextBox";
+            this.commandTitleTextBox.Size = new System.Drawing.Size(408, 23);
+            this.commandTitleTextBox.TabIndex = 2;
+            this.commandTitleTextBox.TextChanged += new System.EventHandler(this.commandTitleTextBox_TextChanged);
+            // 
+            // commandTitlePrefixCheckbox
+            // 
+            this.commandTitlePrefixCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandTitlePrefixCheckbox.AutoSize = true;
+            this.commandTitlePrefixCheckbox.Checked = true;
+            this.commandTitlePrefixCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.commandTitlePrefixCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandTitlePrefixCheckbox.Location = new System.Drawing.Point(371, 13);
+            this.commandTitlePrefixCheckbox.Name = "commandTitlePrefixCheckbox";
+            this.commandTitlePrefixCheckbox.Size = new System.Drawing.Size(97, 21);
+            this.commandTitlePrefixCheckbox.TabIndex = 1;
+            this.commandTitlePrefixCheckbox.Text = "Uses prefix";
+            this.toolTipDisplay.SetToolTip(this.commandTitlePrefixCheckbox, resources.GetString("commandTitlePrefixCheckbox.ToolTip"));
+            this.commandTitlePrefixCheckbox.UseVisualStyleBackColor = true;
             // 
             // propertiesPanel
             // 
@@ -239,49 +396,81 @@
             this.propertiesBotNameLabel.TabIndex = 1;
             this.propertiesBotNameLabel.Text = "Bot Name:";
             // 
-            // commandTitlePrefixCheckbox
-            // 
-            this.commandTitlePrefixCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.commandTitlePrefixCheckbox.AutoSize = true;
-            this.commandTitlePrefixCheckbox.Checked = true;
-            this.commandTitlePrefixCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.commandTitlePrefixCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.commandTitlePrefixCheckbox.Location = new System.Drawing.Point(365, 12);
-            this.commandTitlePrefixCheckbox.Name = "commandTitlePrefixCheckbox";
-            this.commandTitlePrefixCheckbox.Size = new System.Drawing.Size(97, 21);
-            this.commandTitlePrefixCheckbox.TabIndex = 1;
-            this.commandTitlePrefixCheckbox.Text = "Uses prefix";
-            this.toolTipDisplay.SetToolTip(this.commandTitlePrefixCheckbox, resources.GetString("commandTitlePrefixCheckbox.ToolTip"));
-            this.commandTitlePrefixCheckbox.UseVisualStyleBackColor = true;
-            // 
-            // commandTitleTextBox
-            // 
-            this.commandTitleTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.commandTitleTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.commandTitleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.commandTitleTextBox.Location = new System.Drawing.Point(60, 37);
-            this.commandTitleTextBox.Name = "commandTitleTextBox";
-            this.commandTitleTextBox.Size = new System.Drawing.Size(402, 23);
-            this.commandTitleTextBox.TabIndex = 2;
-            this.commandTitleTextBox.TextChanged += new System.EventHandler(this.commandTitleTextBox_TextChanged);
-            // 
-            // commandTitleLabel
-            // 
-            this.commandTitleLabel.AutoSize = true;
-            this.commandTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.commandTitleLabel.Location = new System.Drawing.Point(60, 13);
-            this.commandTitleLabel.Name = "commandTitleLabel";
-            this.commandTitleLabel.Size = new System.Drawing.Size(109, 17);
-            this.commandTitleLabel.TabIndex = 3;
-            this.commandTitleLabel.Text = "Command label:";
-            // 
             // toolTipDisplay
             // 
             this.toolTipDisplay.AutoPopDelay = 500000000;
             this.toolTipDisplay.InitialDelay = 500;
             this.toolTipDisplay.ReshowDelay = 100;
             this.toolTipDisplay.ToolTipTitle = "Help";
+            // 
+            // commandArgumentsTypeLabel1
+            // 
+            this.commandArgumentsTypeLabel1.AutoSize = true;
+            this.commandArgumentsTypeLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandArgumentsTypeLabel1.Location = new System.Drawing.Point(60, 138);
+            this.commandArgumentsTypeLabel1.Name = "commandArgumentsTypeLabel1";
+            this.commandArgumentsTypeLabel1.Size = new System.Drawing.Size(87, 17);
+            this.commandArgumentsTypeLabel1.TabIndex = 9;
+            this.commandArgumentsTypeLabel1.Text = "Argument n°";
+            // 
+            // commandArgumentsTypeNumericUpDown
+            // 
+            this.commandArgumentsTypeNumericUpDown.Location = new System.Drawing.Point(144, 138);
+            this.commandArgumentsTypeNumericUpDown.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.commandArgumentsTypeNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.commandArgumentsTypeNumericUpDown.Name = "commandArgumentsTypeNumericUpDown";
+            this.commandArgumentsTypeNumericUpDown.Size = new System.Drawing.Size(38, 20);
+            this.commandArgumentsTypeNumericUpDown.TabIndex = 10;
+            this.commandArgumentsTypeNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.commandArgumentsTypeNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // commandArgumentsTypeLabel2
+            // 
+            this.commandArgumentsTypeLabel2.AutoSize = true;
+            this.commandArgumentsTypeLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.commandArgumentsTypeLabel2.Location = new System.Drawing.Point(188, 138);
+            this.commandArgumentsTypeLabel2.Name = "commandArgumentsTypeLabel2";
+            this.commandArgumentsTypeLabel2.Size = new System.Drawing.Size(73, 17);
+            this.commandArgumentsTypeLabel2.TabIndex = 11;
+            this.commandArgumentsTypeLabel2.Text = "is of type: ";
+            // 
+            // commandArgumentsTypeComboBox
+            // 
+            this.commandArgumentsTypeComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.commandArgumentsTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.commandArgumentsTypeComboBox.FormattingEnabled = true;
+            this.commandArgumentsTypeComboBox.Items.AddRange(new object[] {
+            "String",
+            "Interger",
+            "User Mention",
+            "Channel"});
+            this.commandArgumentsTypeComboBox.Location = new System.Drawing.Point(267, 137);
+            this.commandArgumentsTypeComboBox.Name = "commandArgumentsTypeComboBox";
+            this.commandArgumentsTypeComboBox.Size = new System.Drawing.Size(201, 21);
+            this.commandArgumentsTypeComboBox.TabIndex = 12;
+            // 
+            // commandTitleIcon
+            // 
+            this.commandTitleIcon.Image = ((System.Drawing.Image)(resources.GetObject("commandTitleIcon.Image")));
+            this.commandTitleIcon.Location = new System.Drawing.Point(6, 12);
+            this.commandTitleIcon.Name = "commandTitleIcon";
+            this.commandTitleIcon.Size = new System.Drawing.Size(48, 48);
+            this.commandTitleIcon.TabIndex = 0;
+            this.commandTitleIcon.TabStop = false;
+            this.toolTipDisplay.SetToolTip(this.commandTitleIcon, resources.GetString("commandTitleIcon.ToolTip"));
             // 
             // propertiesPicture
             // 
@@ -295,16 +484,6 @@
             this.propertiesPicture.TabStop = false;
             this.toolTipDisplay.SetToolTip(this.propertiesPicture, "Set up the global properties of your bot\r\nHover over each tooltip for more detail" +
         "s\r\n");
-            // 
-            // commandTitleIcon
-            // 
-            this.commandTitleIcon.Image = ((System.Drawing.Image)(resources.GetObject("commandTitleIcon.Image")));
-            this.commandTitleIcon.Location = new System.Drawing.Point(6, 12);
-            this.commandTitleIcon.Name = "commandTitleIcon";
-            this.commandTitleIcon.Size = new System.Drawing.Size(48, 48);
-            this.commandTitleIcon.TabIndex = 0;
-            this.commandTitleIcon.TabStop = false;
-            this.toolTipDisplay.SetToolTip(this.commandTitleIcon, resources.GetString("commandTitleIcon.ToolTip"));
             // 
             // addCommandButton
             // 
@@ -333,64 +512,15 @@
             this.toolTipDisplay.SetToolTip(this.removeCommandButton, "Remove the currently selected command (cannot be undone)");
             this.removeCommandButton.UseVisualStyleBackColor = false;
             // 
-            // commandArgumentsLabel
-            // 
-            this.commandArgumentsLabel.AutoSize = true;
-            this.commandArgumentsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.commandArgumentsLabel.Location = new System.Drawing.Point(60, 69);
-            this.commandArgumentsLabel.Margin = new System.Windows.Forms.Padding(3);
-            this.commandArgumentsLabel.Name = "commandArgumentsLabel";
-            this.commandArgumentsLabel.Size = new System.Drawing.Size(146, 17);
-            this.commandArgumentsLabel.TabIndex = 5;
-            this.commandArgumentsLabel.Text = "Command arguments:";
-            // 
-            // comandArgumentsNumericUpDown
-            // 
-            this.comandArgumentsNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comandArgumentsNumericUpDown.Location = new System.Drawing.Point(60, 90);
-            this.comandArgumentsNumericUpDown.Margin = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            this.comandArgumentsNumericUpDown.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.comandArgumentsNumericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.comandArgumentsNumericUpDown.Name = "comandArgumentsNumericUpDown";
-            this.comandArgumentsNumericUpDown.Size = new System.Drawing.Size(67, 23);
-            this.comandArgumentsNumericUpDown.TabIndex = 6;
-            this.comandArgumentsNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.comandArgumentsNumericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // commandArgumentsAllowsSpacesCheckBox
-            // 
-            this.commandArgumentsAllowsSpacesCheckBox.AutoSize = true;
-            this.commandArgumentsAllowsSpacesCheckBox.Checked = true;
-            this.commandArgumentsAllowsSpacesCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.commandArgumentsAllowsSpacesCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.commandArgumentsAllowsSpacesCheckBox.Location = new System.Drawing.Point(165, 92);
-            this.commandArgumentsAllowsSpacesCheckBox.Name = "commandArgumentsAllowsSpacesCheckBox";
-            this.commandArgumentsAllowsSpacesCheckBox.Size = new System.Drawing.Size(209, 21);
-            this.commandArgumentsAllowsSpacesCheckBox.TabIndex = 7;
-            this.commandArgumentsAllowsSpacesCheckBox.Text = "Last argument allows spaces";
-            this.toolTipDisplay.SetToolTip(this.commandArgumentsAllowsSpacesCheckBox, resources.GetString("commandArgumentsAllowsSpacesCheckBox.ToolTip"));
-            this.commandArgumentsAllowsSpacesCheckBox.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 461);
-            this.Controls.Add(this.propertiesPanel);
             this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.propertiesPanel);
             this.Controls.Add(this.commandsPanel);
+            this.MinimumSize = new System.Drawing.Size(800, 350);
             this.Name = "MainForm";
             this.Text = "Discord Bot Generator";
             this.commandsPanel.ResumeLayout(false);
@@ -399,11 +529,15 @@
             this.commandsListContainer.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
+            this.commandActionsTablePanel.ResumeLayout(false);
+            this.commandAddActionPanel.ResumeLayout(false);
+            this.commandAddActionPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.commandArgumentsNumericUpDown)).EndInit();
             this.propertiesPanel.ResumeLayout(false);
             this.propertiesPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.propertiesPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.commandArgumentsTypeNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandTitleIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comandArgumentsNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propertiesPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -433,9 +567,17 @@
         private System.Windows.Forms.TextBox commandTitleTextBox;
         private System.Windows.Forms.Label commandTitleLabel;
         private System.Windows.Forms.ToolTip toolTipDisplay;
-        private System.Windows.Forms.NumericUpDown comandArgumentsNumericUpDown;
+        private System.Windows.Forms.NumericUpDown commandArgumentsNumericUpDown;
         private System.Windows.Forms.Label commandArgumentsLabel;
         private System.Windows.Forms.CheckBox commandArgumentsAllowsSpacesCheckBox;
+        private System.Windows.Forms.TableLayoutPanel commandActionsTablePanel;
+        private System.Windows.Forms.Panel commandAddActionPanel;
+        private System.Windows.Forms.Label commandAddActionLabel;
+        private System.Windows.Forms.ComboBox commandAddActionComboBox;
+        private System.Windows.Forms.Label commandArgumentsTypeLabel1;
+        private System.Windows.Forms.NumericUpDown commandArgumentsTypeNumericUpDown;
+        private System.Windows.Forms.ComboBox commandArgumentsTypeComboBox;
+        private System.Windows.Forms.Label commandArgumentsTypeLabel2;
     }
 }
 

@@ -9,19 +9,30 @@ namespace DiscordBotGenerator
     class Command
     {
         public String title { get; set; }
-        public int numArguments { get; set; }
+
+        public int[] argumentsType;
        
         public bool usesPrefix { get; set; }
 
-        public String replyMessage { get; set; }
+        public List<CommandAction> actions { get; private set; }
 
-        public Command(String title, int args)
+        public int numArguments
         {
-            this.title = title;
-            this.numArguments = args;
-            usesPrefix = true;
-            replyMessage = "Hello World!";
+            get
+            {
+                return argumentsType.Length;
+            }
+
+            set
+            {
+                Array.Resize<int>(ref argumentsType, value);
+            }
         }
-        
+
+        public Command()
+        {
+            actions = new List<CommandAction>();
+        }
+
     }
 }
